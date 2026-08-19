@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>password hash generator</title>
+<style>
+  body{background:#1a1424;color:#f4e9f7;font:16px/1.6 ui-monospace,SFMono-Regular,Menlo,monospace;
+       display:grid;place-items:center;min-height:100vh;margin:0;padding:24px}
+  .box{max-width:560px;width:100%}
+  h1{font-size:18px;color:#ffb3d1;letter-spacing:.05em}
+  p{color:#bfa8cc;font-size:14px}
+  input{width:100%;padding:14px;border-radius:10px;border:1px solid #4a3a5c;background:#241b31;
+        color:#fff;font:inherit;box-sizing:border-box}
+  #out{margin-top:18px;padding:16px;border-radius:10px;background:#241b31;border:1px dashed #6b5480;
+       word-break:break-all;font-size:13px;color:#9ff5cf;min-height:1.6em}
+  button{margin-top:12px;padding:10px 16px;border-radius:999px;border:0;background:#ff8fbc;
+         color:#2a1030;font:inherit;font-weight:700;cursor:pointer}
+</style>
+</head>
+<body>
+<div class="box">
+  <h1>🔐 password hash generator</h1>
+  <p>Type the password you want to use. Copy the hash below and paste it into
+     <code>js/config.js</code> as <code>passwordHash</code>.
+     Then delete the <code>passwordPlain</code> line (or set it to <code>""</code>).</p>
+  <input id="pw" placeholder="type your password here" autocomplete="off" autofocus>
+  <div id="out">…</div>
+  <button id="copy">copy hash</button>
+</div>
+<script>
+const pw = document.getElementById('pw'), out = document.getElementById('out');
+async function sha256(str){
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
+  return [...new Uint8Array(buf)].map(b => b.toString(16).padStart(2,'0')).join('');
+}
+pw.addEventListener('input', async () => {
+  out.textContent = pw.value ? await sha256(pw.value) : '…';
+});
+document.getElementById('copy').onclick = () => {
+  navigator.clipboard.writeText(out.textContent);
+  document.getElementById('copy').textContent = 'copied ✓';
+};
+</script>
+</body>
+</html>

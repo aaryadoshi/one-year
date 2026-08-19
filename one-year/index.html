@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>♡</title>
+<meta name="description" content="restricted access">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💌</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600&family=JetBrains+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<canvas id="sky" aria-hidden="true"></canvas>
+
+<!-- ══════════════════════════ 1. PASSWORD GATE ══════════════════════════ -->
+<div id="gate">
+  <div class="gate-card">
+    <div class="gate-bar">
+      <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+      <span class="gate-title">~/us — auth</span>
+    </div>
+    <div class="gate-body">
+      <pre id="boot" class="boot"></pre>
+      <form id="gate-form" class="gate-form" autocomplete="off" hidden>
+        <label for="pw" id="pw-label">enter the password</label>
+        <div class="pw-row">
+          <span class="caret">&gt;</span>
+          <input id="pw" type="password" inputmode="text" autocomplete="off"
+                 spellcheck="false" aria-describedby="pw-msg">
+          <button type="submit" aria-label="unlock">↵</button>
+        </div>
+        <p id="pw-msg" class="pw-msg" role="status"></p>
+      </form>
+    </div>
+  </div>
+  <p class="gate-foot">sha-256 · client-side · no peeking at the source, it won't help you 🩷</p>
+</div>
+
+
+<!-- ══════════════════════════ 2. MAIN PAGE ══════════════════════════ -->
+<main id="app" hidden>
+
+  <!-- ── hero: access granted ── -->
+  <section class="hero">
+    <pre id="granted" class="granted"></pre>
+    <p class="hero-sub" id="hero-sub">you're in. there's something for you down here ↓</p>
+
+    <!-- envelope -->
+    <div class="env-wrap">
+      <button id="envelope" class="envelope" aria-label="open the letter">
+        <div class="env-back"></div>
+        <div class="env-paper"><span>♡</span></div>
+        <div class="env-front"></div>
+        <div class="env-flap"></div>
+        <div class="env-seal">♡</div>
+      </button>
+      <p class="env-hint">tap to open</p>
+    </div>
+  </section>
+
+  <!-- ── the letter ── -->
+  <section id="letter" class="letter" hidden>
+    <article class="letter-paper">
+      <div class="letter-inner">
+        <h2 id="l-greeting"></h2>
+        <div id="l-body"></div>
+        <p class="l-signoff" id="l-signoff"></p>
+        <p class="l-signature" id="l-signature"></p>
+      </div>
+      <button id="close-letter" class="btn-soft">seal it back up ✉</button>
+    </article>
+  </section>
+
+  <!-- ── calendar + counter ── -->
+  <section class="cal-section" id="cal-section">
+    <div class="cal-card">
+      <header class="cal-head">
+        <span class="cal-mono">// one year</span>
+        <h2 id="cal-title">August 2026</h2>
+      </header>
+      <div class="cal-grid" id="cal-grid" role="grid" aria-label="August 2026"></div>
+      <div class="cal-legend"><span class="lg-heart">♡</span> the day it became a year</div>
+    </div>
+
+    <div class="counter" id="counter">
+      <div class="c-unit"><b id="c-d">0</b><small>days</small></div>
+      <div class="c-unit"><b id="c-h">0</b><small>hours</small></div>
+      <div class="c-unit"><b id="c-m">0</b><small>minutes</small></div>
+      <div class="c-unit"><b id="c-s">0</b><small>seconds</small></div>
+      <p class="c-label" id="c-label">since the beginning</p>
+    </div>
+  </section>
+
+  <!-- ── the 4 jars ── -->
+  <section class="jars-section">
+    <h2 class="jars-title">four jars of love</h2>
+    <p class="jars-sub">tap one. open in any order.</p>
+
+    <div class="jars" id="jars">
+      <button class="jar" data-jar="songs" style="--jc:#ff9ec4;--jc2:#ffd1e3">
+        <div class="jar-glass"><div class="jar-fill"></div><div class="jar-shine"></div></div>
+        <div class="jar-lid"></div>
+        <span class="jar-tag">songs that<br>remind me of you</span>
+        <span class="jar-idx">jar[0]</span>
+      </button>
+
+      <button class="jar" data-jar="photos" style="--jc:#a99bff;--jc2:#dcd6ff">
+        <div class="jar-glass"><div class="jar-fill"></div><div class="jar-shine"></div></div>
+        <div class="jar-lid"></div>
+        <span class="jar-tag">every photo<br>i kept</span>
+        <span class="jar-idx">jar[1]</span>
+      </button>
+
+      <button class="jar" data-jar="game" style="--jc:#7fe3c4;--jc2:#c9f7e8">
+        <div class="jar-glass"><div class="jar-fill"></div><div class="jar-shine"></div></div>
+        <div class="jar-lid"></div>
+        <span class="jar-tag">a game<br>for you</span>
+        <span class="jar-idx">jar[2]</span>
+      </button>
+
+      <button class="jar" data-jar="terminal" style="--jc:#ffc978;--jc2:#ffe9c4">
+        <div class="jar-glass"><div class="jar-fill"></div><div class="jar-shine"></div></div>
+        <div class="jar-lid"></div>
+        <span class="jar-tag">love.exe<br>(run me)</span>
+        <span class="jar-idx">jar[3]</span>
+      </button>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <p>built by hand, at 2am, with far too many <code>console.log</code>s</p>
+    <p class="foot-sig">♡ <span id="foot-names"></span></p>
+  </footer>
+</main>
+
+
+<!-- ══════════════════════════ 3. MODAL SHELL ══════════════════════════ -->
+<div id="modal" class="modal" hidden role="dialog" aria-modal="true">
+  <div class="modal-scrim" data-close></div>
+  <div class="modal-card" id="modal-card">
+    <header class="modal-head">
+      <h3 id="modal-title"></h3>
+      <button class="modal-x" data-close aria-label="close">✕</button>
+    </header>
+    <div class="modal-body" id="modal-body"></div>
+  </div>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
