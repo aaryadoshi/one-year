@@ -60,10 +60,10 @@ const CONFIG = {
    * ---------------------------------------------------------------- */
   songs: [
     {
-      title: "Sample Song One",
-      artist: "Some Artist",
-      youtubeId: "dQw4w9WgXcQ",
-      note: "This one played in the car that night and you sang every word wrong.",
+      title: "Yellow💛",
+      artist: "Coldplay",
+      youtubeId: "h7FN5dU9ROo&list=RDh7FN5dU9ROo&start_radio=1",
+      note: "Our one month. In the car. This was on.",
     },
     {
       title: "Sample Song Two",
@@ -72,9 +72,9 @@ const CONFIG = {
       note: "I can't hear the first ten seconds of this without thinking of you.",
     },
     {
-      title: "Sample Song Three",
-      artist: "Third Artist",
-      youtubeId: "dQw4w9WgXcQ",
+      title: "Stand by me",
+      artist: "Ben E King",
+      youtubeId: "7rZyI7kPZMI&list=RD7rZyI7kPZMI&start_radio=1",
       note: "Our song. Obviously.",
     },
     // add as many as you want — just copy a block
