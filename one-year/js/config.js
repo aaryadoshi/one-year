@@ -97,6 +97,9 @@ const CONFIG = {
     { src: "photos/7.jpg", caption: "" },
     { src: "photos/8.jpg", caption: "" },
     { src: "photos/9.jpg", caption: "" },
+    { src: "photos/10.jpg", caption: "" },
+    { src: "photos/11.jpg", caption: "" },
+    { src: "photos/12.jpg", caption: "" },
     // add more — the collage lays itself out automatically
   ],
 
