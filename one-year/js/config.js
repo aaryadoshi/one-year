@@ -10,7 +10,7 @@ const CONFIG = {
    * 1. THE BASICS
    * ---------------------------------------------------------------- */
   yourName: "Aarya",
-  theirName: "You",              // <- his name goes here
+  theirName: "Devu",              // <- his name goes here
   startDate: "2025-08-22",       // the day it all began (YYYY-MM-DD)
   anniversary: { year: 2026, month: 8, day: 22 },   // heart lands here on the calendar
 
