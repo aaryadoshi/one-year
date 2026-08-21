@@ -125,7 +125,7 @@ const CONFIG = {
     "you stay on the phone half asleep just to keep hearing me",
     "you butchering gujarati for me anyway",
     "you make me feel like the easiest person in the world to love",
-    "the way you cook for me without ever being asked"
+    "the way you cook for me without ever being asked",
     "your hair",
     "you never make me explain myself twice",
     "your ambition",
