@@ -88,18 +88,18 @@ const CONFIG = {
    *    then list the filenames here.  Captions are optional.
    * ---------------------------------------------------------------- */
   photos: [
-    { src: "photos/1.jpg", caption: "the first one" },
-    { src: "photos/2.jpg", caption: "you, laughing at nothing" },
-    { src: "photos/3.jpg", caption: "that day" },
+    { src: "photos/1.jpg", caption: "the first long short distance" },
+    { src: "photos/2.jpg", caption: "you look hot(love the hair btw)" },
+    { src: "photos/3.jpg", caption: "the tiptoe tax of dating someone tall" },
     { src: "photos/4.jpg", caption: "us" },
     { src: "photos/5.jpg", caption: "my favourite" },
-    { src: "photos/6.jpg", caption: "3am" },
-    { src: "photos/7.jpg", caption: "" },
-    { src: "photos/8.jpg", caption: "" },
-    { src: "photos/9.jpg", caption: "" },
-    { src: "photos/10.jpg", caption: "" },
-    { src: "photos/11.jpg", caption: "" },
-    { src: "photos/12.jpg", caption: "" },
+    { src: "photos/6.jpg", caption: "best b'day everrr" },
+    { src: "photos/7.jpg", caption: "our one month" },
+    { src: "photos/8.jpg", caption: "this is the face you make me make" },
+    { src: "photos/9.jpg", caption: "that day" },
+    { src: "photos/10.jpg", caption: "your day" },
+    { src: "photos/11.jpg", caption: "love being clingy" },
+    { src: "photos/12.jpg", caption: "pre halloween" },
     // add more — the collage lays itself out automatically
   ],
 
