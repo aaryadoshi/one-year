@@ -62,19 +62,19 @@ const CONFIG = {
     {
       title: "Yellow💛",
       artist: "Coldplay",
-      youtubeId: "h7FN5dU9ROo&list=RDh7FN5dU9ROo&start_radio=1",
+      youtubeId: "45eejk0hcUg",
       note: "Our one month. In the car. This was on.",
     },
     {
-      title: "Sample Song Two",
-      artist: "Another Artist",
-      youtubeId: "dQw4w9WgXcQ",
-      note: "I can't hear the first ten seconds of this without thinking of you.",
+      title: "This Town",
+      artist: "Niall Horan",
+      youtubeId: "KXLb2Vu-FD4",
+      note: "If the whole world was watching I'd still dance with you",
     },
     {
-      title: "Stand by me",
+      title: "Stand By Me",
       artist: "Ben E King",
-      youtubeId: "7rZyI7kPZMI&list=RD7rZyI7kPZMI&start_radio=1",
+      youtubeId: "7rZyI7kPZMI",
       note: "Our song. Obviously.",
     },
     // add as many as you want — just copy a block
