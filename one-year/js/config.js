@@ -122,13 +122,13 @@ const CONFIG = {
    *    `reasons` are pulled at random by the `why` command.
    * ---------------------------------------------------------------- */
   reasons: [
-    "the way you say my name when you're half asleep",
-    "you remember the smallest things I mention once",
-    "you laugh at your own jokes before you finish them",
+    "you stay on the phone half asleep just to keep hearing me",
+    "you butchering gujarati for me anyway",
     "you make me feel like the easiest person in the world to love",
+    "the way you cook for me without ever being asked"
     "your hair",
     "you never make me explain myself twice",
-    "the face you make when you're concentrating",
+    "your ambition",
     "you text me things you saw that reminded you of me",
     "you're kind when no one is watching",
     "somehow you make me want to be less mean to myself",
