@@ -89,12 +89,12 @@ const CONFIG = {
    * ---------------------------------------------------------------- */
   photos: [
     { src: "photos/1.jpg", caption: "the first long short distance" },
-    { src: "photos/2.jpg", caption: "you look hot(love the hair btw)" },
+    { src: "photos/2.jpg", caption: "the hair. that's the whole caption" },
     { src: "photos/3.jpg", caption: "the tiptoe tax of dating someone tall" },
     { src: "photos/4.jpg", caption: "us" },
     { src: "photos/5.jpg", caption: "my favourite" },
     { src: "photos/6.jpg", caption: "best b'day everrr" },
-    { src: "photos/7.jpg", caption: "our one month" },
+    { src: "photos/7.jpg", caption: "one month in" },
     { src: "photos/8.jpg", caption: "this is the face you make me make" },
     { src: "photos/9.jpg", caption: "that day" },
     { src: "photos/10.jpg", caption: "your day" },
@@ -126,7 +126,7 @@ const CONFIG = {
     "you remember the smallest things I mention once",
     "you laugh at your own jokes before you finish them",
     "you make me feel like the easiest person in the world to love",
-    "your hands",
+    "your hair",
     "you never make me explain myself twice",
     "the face you make when you're concentrating",
     "you text me things you saw that reminded you of me",
