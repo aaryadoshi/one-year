@@ -10,7 +10,7 @@ const CONFIG = {
    * 1. THE BASICS
    * ---------------------------------------------------------------- */
   yourName: "Aarya",
-  theirName: "Devu",              // <- his name goes here
+  theirName: "Devaj",              // <- his name goes here
   startDate: "2025-08-22",       // the day it all began (YYYY-MM-DD)
   anniversary: { year: 2026, month: 8, day: 22 },   // heart lands here on the calendar
 
@@ -43,9 +43,9 @@ const CONFIG = {
     greeting: "my favourite person,",
     paragraphs: [
       "One year. Three hundred and sixty five days of you being the best part of mine.",
-      "I don't really know how to fit a whole year into a letter. So instead I built you this — a little corner of the internet that only you can get into, full of all the things that remind me of us.",
-      "Thank you for the songs stuck in my head, the photos I keep re-opening, and every ordinary Tuesday you somehow made feel like something.",
-      "Take your time in here. I made every part of it thinking about you.",
+      "I don't really know how to fit a whole year into a letter. So instead I built you this, a little corner of the internet that only you can get into, full of all the things that remind me of us.",
+      "Ten days of this and I already have opinions about it. A whole year of you being right there, and now a screen. I'm counting, not in a sad way, in a soon way.",
+      "I love you Devu. More than I say out loud, and I say it a lot. Sending you every hug I've been saving up and all the kisses I owe you. I miss you.",
     ],
     signoff: "all my love,",
     signature: "Aarya",
@@ -69,7 +69,7 @@ const CONFIG = {
       title: "This Town",
       artist: "Niall Horan",
       youtubeId: "KXLb2Vu-FD4",
-      note: "If the whole world was watching I'd still dance with you",
+      note: "If the whole world was watching I'd still dance with you.",
     },
     {
       title: "Stand By Me",
@@ -77,6 +77,25 @@ const CONFIG = {
       youtubeId: "7rZyI7kPZMI",
       note: "Our song. Obviously.",
     },
+    {
+      title: "Sukoon Mila",
+      artist: "Arijit Singh",
+      youtubeId: "uoGWobn6tT8",
+      note: "my peace. my home.",
+    },
+    {
+      title: "Aaja Meri Gadi Mein Baith Ja",
+      artist: "Baba Sehgal",
+      youtubeId: "MZbvEholnVc",
+      note: "you know why😭",
+    },
+    {
+      title: "Smooth Operator",
+      artist: "Sade",
+      youtubeId: "UNk6LTZYokk",
+      note: "you definitely know why😉",
+    },
+    
     // add as many as you want — just copy a block
   ],
 
